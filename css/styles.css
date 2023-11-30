@@ -4,7 +4,13 @@
 }
 
 header nav {
+    display: flex;
+    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.848);
+}
+
+header nav .logo-box{
+    margin-left: 1%;
 }
 
 header nav .nav-item .logo img{
@@ -39,7 +45,42 @@ header nav .tasks-view a{
     width: 30%;
 }
 
-.task-body .add-task-box .add-task-button{
+.task-body .add-task-box .buttons-box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.task-body .add-task-box .buttons-box .show-task-button {
     display: flex;
     justify-content: end;
+} 
+
+.task-body .add-task-box .buttons-box .add-task-button button {
+    padding: 3%;
 }
+
+.task-body .add-task-box .buttons-box .show-task-button button {
+    padding: 3%;
+}
+
+.task-item .select-task {
+    padding-right: 1%;
+}
+
+.task-item .del-btn {
+    background-color: transparent;
+    width: 4rem;
+    border: none;
+   font-size: 30px;
+
+}
+
+.task-item .del-btn i:hover{
+   color: rgba(255, 0, 0, 0.605);
+}
+
